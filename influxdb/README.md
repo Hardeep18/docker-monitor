@@ -2,7 +2,7 @@
 
 create influx database 
 
-- docker exec <containerID> influx -execute 'CREATE DATABASE cadvisor'
+- docker exec (<containerID) influx -execute 'CREATE DATABASE cadvisor'
 
 configure influx db from grafana gui
 
