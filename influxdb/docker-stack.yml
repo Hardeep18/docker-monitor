@@ -31,7 +31,7 @@ services:
     image: google/cadvisor
     ports:
       - 8080:8080
-    hostname: '{{.Node.Hostname}}'
+    hostname: (jenkins.example.com)
     command: -logtostderr -docker_only -storage_driver=influxdb -storage_driver_db=cadvisor -storage_driver_host=influx:8086
     volumes:
       - /:/rootfs:ro
